@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Sticky</title>
+    <style>
+
+        .container{
+            padding:  2em;
+            height: 350vh;
+        }
+
+        .heading-list{
+            padding: 1em;
+            background-color: rgb(31, 31, 31);
+            color: white;
+            font-size: 1.6em;
+            position: static;
+        }
+
+        @supports(position: sticky) {
+            .heading-list{
+                position: sticky;
+                top: 0;
+            }
+        }
+
+        ul li {
+            padding: 1em;
+            font-size: 1.2em;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading-list">
+            A
+        </div>
+        <div class="list">
+            <ul>
+                <li>Ahmad</li>
+                <li>Ali</li>
+                <li>Akram</li>
+                <li>Afzal</li>
+                <li>Abrar</li>
+            </ul>
+        </div>
+
+        
+        <div class="heading-list">
+            B
+        </div>
+        <div class="list">
+            <ul>
+                <li>Bilal</li>
+                <li>Bahawal</li>
+                <li>Bajva</li>
+                <li>Big</li>
+                <li>Ball</li>
+                <li>Bat</li>
+            </ul>
+        </div>
+
+        
+        <div class="heading-list">
+            C
+        </div>
+        <div class="list">
+            <ul>
+                <li>Cat</li>
+                <li>Crown</li>
+                <li>Creem</li>
+            </ul>
+        </div>
+
+        
+        <div class="heading-list">
+            D
+        </div>
+        <div class="list">
+            <ul>
+                <li>Dog</li>
+                <li>Down</li>
+                <li>Drag</li>
+                <li>Drop</li>
+                <li>Dig</li>
+            </ul>
+        </div>
+
+
+    </div>
+</body>
+</html>
